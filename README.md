@@ -1,59 +1,72 @@
-# Custom Linux Development for FPGA-Based Systems
+# 🚀 **Custom Linux Development for FPGA-Based Systems**
 
-## Overview
-This repository contains the full documentation, implementation, and results of the **Custom Linux Development for FPGA-Based Systems** project. It includes FPGA bitstream files, software applications, testing scripts, performance benchmarking results, presentation slides, and an execution demo video.
+## 📌 **Overview**
+This repository contains the complete **documentation**, **presentation slides**, and an **execution demo video** for the **Custom Linux Development for FPGA-Based Systems** project. 
 
-## Features
-- **Custom Linux OS for FPGA** (RISC-V architecture on Virtex VC707)
-- **SSH access to the system** for remote interaction
-- **Python-based AES encryption/decryption application**
-- **Terminal-based 'Guess the Number' game** for application testing
-- **FPGA-hosted web server** for project dashboard access
-- **Performance benchmarking** using CoreMark & Linpack
+⚠️ **Note:** This repository **does not** include development code or source files. It serves as a comprehensive guide and proof of execution.
 
-## Repository Structure
-```
-📁 bitstream/  → FPGA bitstream files
+---
+
+## 🌟 **Features**
+✅ Comprehensive **Documentation** for FPGA Linux setup (RISC-V on Virtex VC707)  
+✅ **Presentation Slides** covering project insights  
+✅ **Execution Video** demonstrating key functionalities  
+
+---
+
+## 📂 **Repository Structure**
+```plaintext
 📁 docs/       → PDF documentation of the project
 📁 slides/     → Presentation slides
 📁 video/      → Execution demo video
-📁 scripts/    → Utility scripts for running the system
-📁 results/    → Benchmarking results
-📁 src/        → Source code for applications
 📄 README.md   → Project overview and guide
 📄 LICENSE     → License information
 📄 .gitignore  → Ignore unnecessary files
 ```
 
-## Installation Guide
-### **1. Clone the Repository**
+---
+
+## 🔗 **Cloning This Documentation Repository**
 ```sh
-git clone https://github.com/yourusername/fpga-linux-customization.git
-cd fpga-linux-customization
+git clone https://github.com/yourusername/fpga-linux-documentation.git
+cd fpga-linux-documentation
 ```
 
-### **2. Load the FPGA Bitstream**
+---
+
+## 🔗 **Cloning the Actual FPGA Development Repository**
+The actual FPGA development files, including scripts, source code, and bitstream, are available in the **Vivado RISC-V repository**. Clone it using:
+```sh
+git clone https://github.com/eugene-tarassov/vivado-risc-v.git
+cd vivado-risc-v
+```
+
+---
+
+## ⚙️ **Commands Used in This Project**
+
+### 🛠 **1. Setting Up FPGA Environment**
 ```sh
 source /opt/Xilinx/Vivado/2024.2/settings64.sh
 make CONFIG=rocket64b1 BOARD=vc707 bitstream
 ```
 
-### **3. Access the System via SSH**
+### 🔗 **2. Accessing the FPGA System via SSH**
 ```sh
 ssh debian@<FPGA_IP>
 ```
 
-### **4. Run the "Guess the Number" Game**
+### 🎮 **3. Running the "Guess the Number" Game**
 ```sh
 python3 scripts/guess_the_number.py
 ```
 
-### **5. Run AES Encryption/Decryption Application**
+### 🔐 **4. Running AES Encryption/Decryption Application**
 ```sh
 python3 scripts/aes_interactive.py
 ```
 
-### **6. Start the Web Server on FPGA**
+### 🌐 **5. Starting the Web Server on FPGA**
 ```sh
 python3 scripts/web_server.py
 ```
@@ -62,26 +75,42 @@ Then, open your browser and navigate to:
 http://<FPGA_IP>:8000
 ```
 
-## Benchmarking Performance
-### **CoreMark Benchmark**
+### 📊 **6. Benchmarking Performance**
+#### 📈 **CoreMark Benchmark**
 ```sh
 make XCFLAGS=" -DPERFORMANCE_RUN=1" load run1.log
 ```
-
-### **Linpack Benchmark**
+#### 📉 **Linpack Benchmark**
 ```sh
 cd linpack && ./linpack
 ```
 
-## Execution Video
-A demo video showing bitstream loading, SSH access, and running applications is available in the `video/` folder.
+---
 
-## License
-This project is licensed under the MIT License.
+## 🎥 **Execution Video**
+📌 A demo video showing **bitstream loading**, **SSH access**, and **running applications** is available in the `video/` folder.
 
-## Contributing
-If you’d like to contribute, please create a pull request with a detailed description of your changes.
+---
 
-## Contact
-For inquiries or collaborations, reach out via [your email].
+## 🔗 **Reference Repository**
+🛠 Many of the tools and resources for this project were sourced from the **[Vivado RISC-V repository](https://github.com/eugene-tarassov/vivado-risc-v)**. This repository provides essential FPGA development tools and references.
+
+---
+
+## 📜 **License**
+📄 This project is licensed under the **MIT License**.
+
+---
+
+## 🤝 **Contributing**
+🚀 If you’d like to contribute, please **create a pull request** with a detailed description of your changes.
+
+---
+
+## 📩 **Contact**
+For inquiries or collaborations, reach out via 📧 **[your email]**. 
+
+---
+
+✨ **Happy Coding!** ✨
 
