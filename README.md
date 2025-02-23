@@ -1,9 +1,7 @@
 # 🚀 **Custom Linux Development for FPGA-Based Systems**
 
 ## 📌 **Overview**
-This repository contains the complete **documentation**, **presentation slides**, and an **execution demo video** for the **Custom Linux Development for FPGA-Based Systems** project. 
-
-
+This repository contains the complete **documentation**, **presentation slides**, and an **execution demo video** for the **Custom Linux Development for FPGA-Based Systems** project.
 
 ---
 
@@ -23,6 +21,11 @@ This repository contains the complete **documentation**, **presentation slides**
 📄 LICENSE     → License information
 📄 .gitignore  → Ignore unnecessary files
 ```
+
+---
+
+## 🎥 **Execution Video**
+📌 Watch the execution demo here: [![Watch the Demo](https://img.youtube.com/vi/r-29d8TeYEU/0.jpg)](https://youtu.be/r-29d8TeYEU?si=TaIStR-SQUXphdjQ)
 
 ---
 
@@ -84,11 +87,6 @@ make XCFLAGS=" -DPERFORMANCE_RUN=1" load run1.log
 ```sh
 cd linpack && ./linpack
 ```
-
----
-
-## 🎥 **Execution Video**
-📌 A demo video showing **bitstream loading**, **SSH access**, and **running applications** is available in the `video/` folder.
 
 ---
 
