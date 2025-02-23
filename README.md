@@ -3,7 +3,7 @@
 ## 📌 **Overview**
 This repository contains the complete **documentation**, **presentation slides**, and an **execution demo video** for the **Custom Linux Development for FPGA-Based Systems** project. 
 
-⚠️ **Note:** This repository **does not** include development code or source files. It serves as a comprehensive guide and proof of execution.
+
 
 ---
 
