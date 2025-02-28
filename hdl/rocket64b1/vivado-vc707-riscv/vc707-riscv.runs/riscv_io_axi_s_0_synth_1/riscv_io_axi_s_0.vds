@@ -1,0 +1,1092 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Oct  6 10:40:39 2024
+# Process ID: 59192
+# Current directory: /home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1
+# Command line: vivado -log riscv_io_axi_s_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_io_axi_s_0.tcl
+# Log file: /home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1/riscv_io_axi_s_0.vds
+# Journal file: /home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1/vivado.jou
+# Running On: ashraf-Yoga-Slim-7-14ARE05, OS: Linux, CPU Frequency: 3145.228 MHz, CPU Physical cores: 6, Host memory: 7653 MB
+#-----------------------------------------------------------
+source riscv_io_axi_s_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1322.648 ; gain = 0.023 ; free physical = 1877 ; free virtual = 18125
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: riscv_io_axi_s_0
+Command: synth_design -top riscv_io_axi_s_0 -part xc7vx485tffg1761-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 59343
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/ashraf/tools/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11067] parameter 'K_MAX_EP_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:87]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SC_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:88]
+WARNING: [Synth 8-11067] parameter 'K_MAX_CMD_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:89]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LUTRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:90]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:91]
+WARNING: [Synth 8-11067] parameter 'K_MIN_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:92]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SYNC_RATIO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:93]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:94]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:95]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:96]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:97]
+WARNING: [Synth 8-11067] parameter 'K_AXIS_ARB_TDATA_NUM_BYTES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:98]
+WARNING: [Synth 8-11067] parameter 'K_MAX_USER_BITS_PER_BYTE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:99]
+WARNING: [Synth 8-11067] parameter 'K_MAX_INFO_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:100]
+WARNING: [Synth 8-11067] parameter 'K_MAX_OUTSTANDING_REQ' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:101]
+WARNING: [Synth 8-11067] parameter 'K_AXI_SIZE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:102]
+WARNING: [Synth 8-11067] parameter 'K_AXI_BURST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:103]
+WARNING: [Synth 8-11067] parameter 'K_AXI_RESP_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:104]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LAST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:105]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:106]
+WARNING: [Synth 8-11067] parameter 'K_AXI_EXCL_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:107]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:108]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:109]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:110]
+WARNING: [Synth 8-11067] parameter 'K_AXI_PROT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:111]
+WARNING: [Synth 8-11067] parameter 'K_AXI_QOS_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:112]
+WARNING: [Synth 8-11067] parameter 'K_AXI_CACHE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:113]
+WARNING: [Synth 8-11067] parameter 'K_MAX_ACCEPTANCE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:114]
+WARNING: [Synth 8-11067] parameter 'K_MAX_FANOUT' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:115]
+WARNING: [Synth 8-11067] parameter 'K_MAX_READ_WATERMARK' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:116]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BURST_LENGTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:117]
+WARNING: [Synth 8-11067] parameter 'CH_R' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:164]
+WARNING: [Synth 8-11067] parameter 'CH_W' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:165]
+WARNING: [Synth 8-11067] parameter 'CH_AR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:166]
+WARNING: [Synth 8-11067] parameter 'CH_AW' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:167]
+WARNING: [Synth 8-11067] parameter 'CH_B' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:168]
+WARNING: [Synth 8-11067] parameter 'CLK_DOWN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:170]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC_ALIAS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:171]
+WARNING: [Synth 8-11067] parameter 'CLK_ASYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:172]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:173]
+WARNING: [Synth 8-11067] parameter 'CLK_UP' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:174]
+WARNING: [Synth 8-11067] parameter 'CLKEN_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:176]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:177]
+WARNING: [Synth 8-11067] parameter 'CLKEN_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:178]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S_AND_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:179]
+WARNING: [Synth 8-11067] parameter 'ARB_BYPASS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:180]
+WARNING: [Synth 8-11067] parameter 'ARB_ROUNDROBIN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:181]
+WARNING: [Synth 8-11067] parameter 'ARB_SLAVE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:182]
+WARNING: [Synth 8-11067] parameter 'FIFO_LUTRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:183]
+WARNING: [Synth 8-11067] parameter 'FIFO_BRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:184]
+WARNING: [Synth 8-11067] parameter 'FIFO_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:185]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_MEMORY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:186]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_FG' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:187]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_FIFO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:188]
+WARNING: [Synth 8-11067] parameter 'K_T_STRUCT_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:230]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_ADDR_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:232]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_RDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:240]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_WDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:244]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_BRSP_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:247]
+WARNING: [Synth 8-11067] parameter 'K_T_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:253]
+WARNING: [Synth 8-11067] parameter 'K_T_ADDR_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:256]
+WARNING: [Synth 8-11067] parameter 'K_T_DATA_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:259]
+WARNING: [Synth 8-11067] parameter 'K_T_BRSP_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:261]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:263]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:265]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:267]
+WARNING: [Synth 8-11067] parameter 'K_T_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:270]
+WARNING: [Synth 8-11067] parameter 'K_T_SEG_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:304]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:305]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:308]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:310]
+WARNING: [Synth 8-11067] parameter 'K_T_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:313]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:341]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:348]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:352]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:357]
+WARNING: [Synth 8-11067] parameter 'K_T_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:361]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:362]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:547]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:557]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:561]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:566]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:574]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:584]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:588]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:593]
+WARNING: [Synth 8-11067] parameter 'K_T_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:596]
+WARNING: [Synth 8-11067] parameter 'K_MAX_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:597]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_MNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:674]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_SNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:675]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_SCHED_LEN' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:676]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_TKN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:677]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_RTR_ADDR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:678]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_EJECT' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:679]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:680]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:681]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:682]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:683]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:684]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:685]
+INFO: [Common 17-14] Message 'Synth 8-11067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-11014] non-net output port 'upsizer_valid' cannot be initialized at declaration in SystemVerilog mode [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/66be/hdl/sc_node_v1_0_vl_rfs.sv:2589]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2172.703 ; gain = 369.770 ; free physical = 520 ; free virtual = 16792
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1508.710; parent = 1336.566; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3190.344; parent = 2189.551; children = 1000.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_io_axi_s_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/synth/riscv_io_axi_s_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_64RM6X' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2002]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_one_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_0/synth/bd_9a00_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_one_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_0/synth/bd_9a00_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_9a00_psr0_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/synth/bd_9a00_psr0_0.vhd:74]
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/synth/bd_9a00_psr0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/ashraf/tools/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/ashraf/tools/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/home/ashraf/tools/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_9a00_psr0_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/synth/bd_9a00_psr0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9a00_psr0_0' is unconnected for instance 'psr0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_9a00_psr0_0' has 10 connections declared, but only 6 given [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2063]
+INFO: [Synth 8-638] synthesizing module 'bd_9a00_psr_aclk_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/synth/bd_9a00_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/synth/bd_9a00_psr_aclk_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_9a00_psr_aclk_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/synth/bd_9a00_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9a00_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_9a00_psr_aclk_0' has 10 connections declared, but only 6 given [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2070]
+INFO: [Synth 8-638] synthesizing module 'bd_9a00_psr_aclk2_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/synth/bd_9a00_psr_aclk2_0.vhd:74]
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/synth/bd_9a00_psr_aclk2_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_9a00_psr_aclk2_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/synth/bd_9a00_psr_aclk2_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_9a00_psr_aclk2_0' is unconnected for instance 'psr_aclk2' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_9a00_psr_aclk2_0' is unconnected for instance 'psr_aclk2' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_9a00_psr_aclk2_0' is unconnected for instance 'psr_aclk2' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_9a00_psr_aclk2_0' is unconnected for instance 'psr_aclk2' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+WARNING: [Synth 8-7023] instance 'psr_aclk2' of module 'bd_9a00_psr_aclk2_0' has 10 connections declared, but only 6 given [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2077]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_64RM6X' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2002]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1U8DV42' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2382]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00e_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_34/synth/bd_9a00_m00e_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00e_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_34/synth/bd_9a00_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1U8DV42' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2382]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_1GUV2EM' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2683]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00arn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_29/synth/bd_9a00_m00arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00arn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_29/synth/bd_9a00_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00awn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_31/synth/bd_9a00_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00awn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_31/synth/bd_9a00_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00bn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_33/synth/bd_9a00_m00bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00bn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_33/synth/bd_9a00_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00rn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_30/synth/bd_9a00_m00rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00rn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_30/synth/bd_9a00_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00wn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_32/synth/bd_9a00_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00wn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_32/synth/bd_9a00_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_1GUV2EM' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2683]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m00s2a_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_28/synth/bd_9a00_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m00s2a_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_28/synth/bd_9a00_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_1X9BU2Q' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2979]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01e_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_41/synth/bd_9a00_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01e_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_41/synth/bd_9a00_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_1X9BU2Q' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2979]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_9V7LAW' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3280]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01arn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_36/synth/bd_9a00_m01arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01arn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_36/synth/bd_9a00_m01arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01awn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_38/synth/bd_9a00_m01awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01awn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_38/synth/bd_9a00_m01awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01bn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_40/synth/bd_9a00_m01bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01bn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_40/synth/bd_9a00_m01bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01rn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_37/synth/bd_9a00_m01rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01rn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_37/synth/bd_9a00_m01rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01wn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_39/synth/bd_9a00_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01wn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_39/synth/bd_9a00_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_9V7LAW' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3280]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m01s2a_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_35/synth/bd_9a00_m01s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m01s2a_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_35/synth/bd_9a00_m01s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm02_exit_pipeline_imp_1HISZ7M' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3576]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02e_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_48/synth/bd_9a00_m02e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02e_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_48/synth/bd_9a00_m02e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm02_exit_pipeline_imp_1HISZ7M' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3576]
+INFO: [Synth 8-6157] synthesizing module 'm02_nodes_imp_QM8ITF' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3877]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02arn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_43/synth/bd_9a00_m02arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02arn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_43/synth/bd_9a00_m02arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02awn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_45/synth/bd_9a00_m02awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02awn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_45/synth/bd_9a00_m02awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02bn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_47/synth/bd_9a00_m02bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (0#1) [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (0#1) [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02bn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_47/synth/bd_9a00_m02bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02rn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_44/synth/bd_9a00_m02rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized2' [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized2' (0#1) [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02rn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_44/synth/bd_9a00_m02rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02wn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_46/synth/bd_9a00_m02wn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized3' [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized3' (0#1) [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02wn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_46/synth/bd_9a00_m02wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm02_nodes_imp_QM8ITF' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:3877]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m02s2a_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_42/synth/bd_9a00_m02s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m02s2a_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_42/synth/bd_9a00_m02s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm03_exit_pipeline_imp_1NVLDOI' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4173]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03e_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_55/synth/bd_9a00_m03e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03e_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_55/synth/bd_9a00_m03e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm03_exit_pipeline_imp_1NVLDOI' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4173]
+INFO: [Synth 8-6157] synthesizing module 'm03_nodes_imp_1I2LVSL' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4474]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03arn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_50/synth/bd_9a00_m03arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03arn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_50/synth/bd_9a00_m03arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03awn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_52/synth/bd_9a00_m03awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03awn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_52/synth/bd_9a00_m03awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03bn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_54/synth/bd_9a00_m03bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03bn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_54/synth/bd_9a00_m03bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03rn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_51/synth/bd_9a00_m03rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03rn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_51/synth/bd_9a00_m03rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03wn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_53/synth/bd_9a00_m03wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03wn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_53/synth/bd_9a00_m03wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm03_nodes_imp_1I2LVSL' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4474]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_m03s2a_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_49/synth/bd_9a00_m03s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_m03s2a_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_49/synth/bd_9a00_m03s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00a2s_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_22/synth/bd_9a00_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00a2s_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_22/synth/bd_9a00_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_UEW05D' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4770]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00mmu_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_19/synth/bd_9a00_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00mmu_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_19/synth/bd_9a00_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00sic_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_21/synth/bd_9a00_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00sic_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_21/synth/bd_9a00_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_s00tr_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_20/synth/bd_9a00_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_s00tr_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_20/synth/bd_9a00_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_UEW05D' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:4770]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_XC3YZF' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5419]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_sarn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_23/synth/bd_9a00_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_sarn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_23/synth/bd_9a00_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_sawn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_25/synth/bd_9a00_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_sawn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_25/synth/bd_9a00_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_sbn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_27/synth/bd_9a00_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_sbn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_27/synth/bd_9a00_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_srn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_24/synth/bd_9a00_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_srn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_24/synth/bd_9a00_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_swn_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_26/synth/bd_9a00_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_swn_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_26/synth/bd_9a00_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_XC3YZF' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5419]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_5HZCGF' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5715]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_arinsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_4/synth/bd_9a00_arinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_arinsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_4/synth/bd_9a00_arinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_aroutsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_9/synth/bd_9a00_aroutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_aroutsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_9/synth/bd_9a00_aroutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_awinsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_6/synth/bd_9a00_awinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_awinsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_6/synth/bd_9a00_awinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_awoutsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_11/synth/bd_9a00_awoutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_awoutsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_11/synth/bd_9a00_awoutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_binsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_8/synth/bd_9a00_binsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_binsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_8/synth/bd_9a00_binsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_boutsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_13/synth/bd_9a00_boutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_boutsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_13/synth/bd_9a00_boutsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'i_nodes_imp_1NX4E0N' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2086]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_arni_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_14/synth/bd_9a00_arni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_arni_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_14/synth/bd_9a00_arni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_awni_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_16/synth/bd_9a00_awni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_awni_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_16/synth/bd_9a00_awni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_bni_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_18/synth/bd_9a00_bni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_bni_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_18/synth/bd_9a00_bni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_rni_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_15/synth/bd_9a00_rni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_rni_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_15/synth/bd_9a00_rni_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_wni_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_17/synth/bd_9a00_wni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_wni_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_17/synth/bd_9a00_wni_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'i_nodes_imp_1NX4E0N' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2086]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_rinsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_5/synth/bd_9a00_rinsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_rinsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_5/synth/bd_9a00_rinsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_routsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_10/synth/bd_9a00_routsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_routsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_10/synth/bd_9a00_routsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_winsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_7/synth/bd_9a00_winsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_winsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_7/synth/bd_9a00_winsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a00_woutsw_0' [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_12/synth/bd_9a00_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00_woutsw_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_12/synth/bd_9a00_woutsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_5HZCGF' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:5715]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a00' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_io_axi_s_0' (0#1) [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/synth/riscv_io_axi_s_0.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_64RM6X does not have driver. [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/synth/bd_9a00.v:2034]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[3] in module sc_switchboard_v1_0_6_top__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[2] in module sc_switchboard_v1_0_6_top__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_6_top__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[3] in module sc_switchboard_v1_0_6_top__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[2] in module sc_switchboard_v1_0_6_top__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_6_top__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slow_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fast_clk in module sc_util_v1_0_4_sample_cycle_ratio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_14_reg_slice3__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_14_reg_slice3__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_14_reg_slice3__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_req[0] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[1] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[0] in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_14_si_handler__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_14_top__parameterized18 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_node_v1_0_14_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_node_v1_0_14_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_14_reg_slice3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_node_v1_0_14_fi_regulator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[3] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[2] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[1] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_info[0] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tvalid in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[15] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[14] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[13] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[12] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[11] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[10] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[9] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[8] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[7] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[6] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[5] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[4] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[3] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[2] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[1] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_arb_tdata[0] in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_arb_tready in module sc_node_v1_0_14_si_handler__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_sc_aclken in module sc_node_v1_0_14_top__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2376.516 ; gain = 573.582 ; free physical = 1186 ; free virtual = 17465
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1526.420; parent = 1354.484; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3377.312; parent = 2376.520; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2394.328 ; gain = 591.395 ; free physical = 1169 ; free virtual = 17448
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1526.420; parent = 1354.484; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3395.125; parent = 2394.332; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2394.328 ; gain = 591.395 ; free physical = 1168 ; free virtual = 17447
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1526.420; parent = 1354.484; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3395.125; parent = 2394.332; children = 1000.793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2400.266 ; gain = 0.000 ; free physical = 1260 ; free virtual = 17540
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_1/bd_9a00_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_2/bd_9a00_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk2_0_board.xdc] for cell 'inst/clk_map/psr_aclk2/U0'
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk2_0_board.xdc] for cell 'inst/clk_map/psr_aclk2/U0'
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk2_0.xdc] for cell 'inst/clk_map/psr_aclk2/U0'
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/bd_0/ip/ip_3/bd_9a00_psr_aclk2_0.xdc] for cell 'inst/clk_map/psr_aclk2/U0'
+Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_io_axi_s_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_io_axi_s_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ashraf/tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_io_axi_s_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_io_axi_s_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 88 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2726.602 ; gain = 0.000 ; free physical = 814 ; free virtual = 17101
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  FDR => FDRE: 36 instances
+  SRL16 => SRL16E: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2736.508 ; gain = 9.906 ; free physical = 805 ; free virtual = 17091
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/ashraf/tools/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 393 ; free virtual = 16733
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 388 ; free virtual = 16728
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1/dont_touch.xdc, line 288).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_nodes/m01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_nodes/m03_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/switchboards/i_nodes/i_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m01_exit_pipeline/m01_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_exit_pipeline/m02_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m03_exit_pipeline/m03_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m02_nodes/m02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_reg_fifo_async.inst_reg_fifo_async /\gen_xpm_cdc_handshake_array[0].inst_cdc_handshake /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 340 ; free virtual = 16680
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0__xdcDup__1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_11_decerr_slave'
+INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_si_converter_v1_0_11_axilite_conv'
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_si_converter_v1_0_11_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              110
+*
+              SM_WR_IDLE |                            00010 |                              000
+              SM_WR_FULL |                            00100 |                              011
+              SM_WR_WAIT |                            01000 |                              010
+                  iSTATE |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              SM_RD_IDLE |                              001 |                               10
+             SM_RD_VALID |                              010 |                               00
+              SM_RD_WAIT |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'sc_node_v1_0_14_reg_fifo_async__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_11_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  W_IDLE |                              000 | 00000000000000000000000000000000
+                    W_RX |                              001 | 00000000000000000000000000000001
+                    W_TX |                              010 | 00000000000000000000000000000010
+              W_COMPLETE |                              011 | 00000000000000000000000000000100
+               W_RECOVER |                              100 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'w_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_11_axilite_conv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  R_IDLE |                               00 | 00000000000000000000000000000000
+               R_PENDING |                               01 | 00000000000000000000000000000001
+                    R_RX |                               10 | 00000000000000000000000000000010
+                    R_TX |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'sc_si_converter_v1_0_11_axilite_conv'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 141 ; free virtual = 16391
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 4     
+	   4 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 31    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 8     
+	   2 Input    1 Bit       Adders := 6     
+	   3 Input    1 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 114   
++---Registers : 
+	             2178 Bit    Registers := 4     
+	              512 Bit    Registers := 1     
+	              167 Bit    Registers := 2     
+	              164 Bit    Registers := 4     
+	               78 Bit    Registers := 1     
+	               75 Bit    Registers := 2     
+	               74 Bit    Registers := 1     
+	               64 Bit    Registers := 6     
+	               55 Bit    Registers := 2     
+	               47 Bit    Registers := 4     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               18 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 38    
+	                3 Bit    Registers := 113   
+	                2 Bit    Registers := 27    
+	                1 Bit    Registers := 434   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 2     
+	   2 Input  146 Bit        Muxes := 10    
+	   2 Input   64 Bit        Muxes := 5     
+	   4 Input   64 Bit        Muxes := 2     
+	   2 Input   57 Bit        Muxes := 5     
+	   2 Input   55 Bit        Muxes := 1     
+	   4 Input   55 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   4 Input   31 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 6     
+	   5 Input   12 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 3     
+	   4 Input    5 Bit        Muxes := 7     
+	   2 Input    5 Bit        Muxes := 7     
+	   2 Input    4 Bit        Muxes := 10    
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 32    
+	   4 Input    3 Bit        Muxes := 9     
+	   5 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 7     
+	   2 Input    2 Bit        Muxes := 49    
+	   4 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 7     
+	   7 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 159   
+	   3 Input    1 Bit        Muxes := 16    
+	   6 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 33    
+	  10 Input    1 Bit        Muxes := 6     
+	   7 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[4]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized4.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[0]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized4.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[4]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized5.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[0]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized5.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[4]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized6.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[0]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized6.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[4]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized6.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[0]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized6.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[4]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized7.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[0]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized7.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[4]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized7.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[0]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized7.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[4]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized8.
+WARNING: [Synth 8-3332] Sequential element (inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/FSM_onehot_wr_state_reg[0]) is unused and will be removed from module sc_node_v1_0_14_top__parameterized8.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 594 ; free virtual = 17629
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 376 ; free virtual = 17671
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 332 ; free virtual = 17630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 225 ; free virtual = 17529
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 145 ; free virtual = 17434
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 147 ; free virtual = 17433
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 142 ; free virtual = 17419
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 141 ; free virtual = 17415
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 140 ; free virtual = 17409
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 137 ; free virtual = 17405
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     6|
+|2     |LUT1   |   200|
+|3     |LUT2   |   166|
+|4     |LUT3   |   312|
+|5     |LUT4   |   118|
+|6     |LUT5   |   131|
+|7     |LUT6   |   277|
+|8     |SRL16  |     3|
+|9     |FDCE   |   201|
+|10    |FDR    |    20|
+|11    |FDRE   |  1765|
+|12    |FDSE   |    68|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 139 ; free virtual = 17404
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1745.796; parent = 1574.084; children = 172.144
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3721.297; parent = 2720.504; children = 1000.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2065 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 2736.508 ; gain = 591.395 ; free physical = 155 ; free virtual = 17414
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 2736.508 ; gain = 933.574 ; free physical = 143 ; free virtual = 17403
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2736.508 ; gain = 0.000 ; free physical = 227 ; free virtual = 17453
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2736.508 ; gain = 0.000 ; free physical = 124 ; free virtual = 17362
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  FDR => FDRE: 20 instances
+  SRL16 => SRL16E: 3 instances
+
+Synth Design complete, checksum: c8ae971c
+INFO: [Common 17-83] Releasing license: Synthesis
+245 Infos, 237 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 2736.508 ; gain = 1407.922 ; free physical = 336 ; free virtual = 17575
+INFO: [Common 17-1381] The checkpoint '/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1/riscv_io_axi_s_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP riscv_io_axi_s_0, cache-ID = 91abb86d80c277e8
+INFO: [Coretcl 2-1174] Renamed 312 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/riscv_io_axi_s_0_synth_1/riscv_io_axi_s_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_io_axi_s_0_utilization_synth.rpt -pb riscv_io_axi_s_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  6 10:42:31 2024...

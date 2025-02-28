@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Oct  6 10:51:31 2024
+# Process ID: 60942
+# Current directory: /home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/synth_1
+# Command line: vivado -log riscv_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_wrapper.tcl
+# Log file: /home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/synth_1/riscv_wrapper.vds
+# Journal file: /home/ashraf/vivado-risc-v/workspace/rocket64b1/vivado-vc707-riscv/vc707-riscv.runs/synth_1/vivado.jou
+# Running On: ashraf-Yoga-Slim-7-14ARE05, OS: Linux, CPU Frequency: 1400.000 MHz, CPU Physical cores: 6, Host memory: 7653 MB
+#-----------------------------------------------------------
+source riscv_wrapper.tcl -notrace

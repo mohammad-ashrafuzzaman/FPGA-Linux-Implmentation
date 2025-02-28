@@ -1,0 +1,17 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/home/ashraf/tools/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7f3141e20ecb]
+/home/ashraf/tools/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7f3141e27c81]
+/home/ashraf/tools/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7f3141e1bd23]
+/home/ashraf/tools/Vivado/2022.2/tps/lnx64/javafx-sdk-11.0.2/lib/libjfxwebkit.so(+0x205ae18) [0x7f30f536ae18]
+/lib/x86_64-linux-gnu/libc.so.6(+0x43090) [0x7f317e1fa090]
+/lib/x86_64-linux-gnu/libc.so.6(+0x46876) [0x7f317e1fd876]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x7f317e1fda60]
+/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0(+0x66bbc) [0x7f310a7e4bbc]
+/lib/x86_64-linux-gnu/libX11.so.6(_XIOError+0x52) [0x7f3172c6a492]
+/lib/x86_64-linux-gnu/libX11.so.6(+0x3f45c) [0x7f3172c6845c]
+/lib/x86_64-linux-gnu/libX11.so.6(XQueryPointer+0x8f) [0x7f3172c5df1f]
+/home/ashraf/tools/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib/libawt_xawt.so(Java_sun_awt_X11_XlibWrapper_XQueryPointer+0x3b) [0x7f311c46f96b]
+[0x7f3129267710]
